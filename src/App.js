@@ -58,15 +58,15 @@ function App() {
         : ""
       }
       {
-            display ? 
+          display ? 
             <div className="cardDisplay">
               <img id="imgDisplay" src={url}></img>
-              <p>Name : {user}</p>
-              <p>Email : {email}</p>
-              <p>Contact number : {phone}</p>
+              <p data-testid="cardname">Name : {user}</p>
+              <p data-testid="cardemail">Email : {email}</p>
+              <p data-testid="contactnumber">Contact number : {phone}</p>
               <button id="delete" onClick={fDelete}>Delete</button>
             </div>
-            : ""
+          : ""
       }
     </div>
   );
